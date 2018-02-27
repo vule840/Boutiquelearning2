@@ -1,0 +1,259 @@
+
+    .navbar-dark .navbar-nav .nav-link{
+        color: #7a7a7a;
+        &:hover{
+            color:black;
+        }
+    }
+.navbar-dark .navbar-nav .active>.nav-link{
+    color:#000;
+}
+
+.navbar-dark .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+
+#cover{
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: url(http://testiranje3333.tk/wp-content/uploads/2017/11/Cover_home.jpg);
+    padding: 0em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+    position: relative;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b75bb', endColorstr='#1b75bb',GradientType=1 );
+    -webkit-box-shadow: 3px -3px 16px 2px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px -3px 16px 2px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px -3px 16px 2px rgba(0, 0, 0, 0.35);
+    padding: 3em 0;
+    /* filter: brightness(50%); */
+
+
+}
+.wrapper{
+       padding: 71px 0; 
+} 
+
+.counter{
+    border: 2px solid #f9cf4f;
+        border-radius: 50px;
+    padding: 3em;
+    .count{
+        font-size:5em;
+        color: #f9cf4f;
+        font-weight: 600;
+    }
+}
+
+body{
+    font-family: $font;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font;
+}
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+.fadeIn  {
+  -webkit-animation-name : fadeIn  ;
+  animation-name : fadeIn  ;
+}  
+@-webkit-keyframes  fadeIn  {
+  0% {
+    opacity : 0  ;
+  }  
+  100% {
+    opacity : 1   ;
+  }  
+}
+@keyframes  fadeIn  {
+  0% {
+    opacity : 0   ;
+  }  
+  100% {
+    opacity : 1   ;
+  }  
+}
+
+.naslov{
+   font-weight: 500;
+   font-size: 3rem;
+       padding-top: 1em;
+}
+.zuta_rijec{
+     color: $zuta;
+}
+.podnaslov{
+    font-weight: 200;
+    font-size: 3rem;
+}
+div#content {
+    background: #fafafa;
+    margin: 1em 0;
+    /*padding: 1em 0;*/
+}
+.plus{
+  font-family: $font;
+  color:black;
+  font-size: 3.5em;
+  &:hover{
+    color:black;
+    text-decoration: none;
+  }
+}
+
+/*DRUGI FLIBOXY*/
+//https://codepen.io/syedrafeeq/pen/eCkFt
+
+.panel {
+    margin: 0 auto;
+    height: 130px;  
+    position: relative;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+
+.panel .front,
+.panel .back {
+    text-align: center;
+}
+    
+.panel .front {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+       -moz-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.panel .back {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.panel.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.box1{
+   //background-color: #14bcc8;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #f9cf4f;
+}
+.box2{
+    //background-color: #ff7e70;
+    width: 350px;
+    height: auto;
+    border: 1px solid #f9cf4f;
+   /* margin: 0 auto;*/
+    padding: 2em;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+/*Slider testimonails 2 su hover flipbox*/
+
+#testimonials_slider{
+  .box1_slider{
+   //background-color: #14bcc8;
+    //width: 250px;
+    height: auto;
+    //margin: 0 auto;
+    //padding: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    //border: 1px solid #f9cf4f;
+}
+.box2_slider{
+    //background-color: #ff7e70;
+    //width: 250px;
+    height: auto;
+   // border: 1px solid #f9cf4f;
+   /* margin: 0 auto;*/
+    //padding: 20px;
+    /*border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;*/
+    background: $zuta;
+    color:white;
+    height: 350px;
+        padding: 1em;
+    padding-top: 20%;
+}
+.panel{
+  height: 370px;
+  
+}
+}
+
+.flip_naslov{
+  padding-top: 1em;
+}
+.card{
+    border:none;
+    padding: 1em;
+    background: $bg_apple;
+}
+#content .owl-carousel .owl-item img{
+  display: inline;
+}
+
+
+.counting
+{
+  font-size:1.2em;
+        color: #f9cf4f;
+        font-weight: 600;
+}
+.boxHow{
+  background:$primary;
+  color:white;
+  width:250px;
+  padding:1em;
+     top: -151px;
+     position: relative;
+}
+.fa-arrow-right{
+  font-size:4em;
+ text-align:center;
+width:50%;
+    width: 100%;
+}
